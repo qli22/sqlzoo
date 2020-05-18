@@ -3,11 +3,11 @@
   world
 | name	        | continent	    | area	        | population	  |     gdp       |
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-|Afghanistan	  | Asia	| 652230	| 25500100	| 20343000000 |
-|Albania	      | Europe	| 28748|	2831741|	12960000000 |
-|Algeria	      | Africa	|2381741	| 37100000	| 188681000000 | 
-|Andorra	      | Europe	|468	|78115 | 3712000000 | 
-|Angola	        | Africa	|1246700	| 20609294	| 100990000000 |
+|Afghanistan	  | Asia	        | 652230	| 25500100	| 20343000000 |
+|Albania	      | Europe	      | 28748   |	2831741   |	12960000000 |
+|Algeria	      | Africa	      |2381741	| 37100000	| 188681000000 | 
+|Andorra	      | Europe	      |468	    |78115      | 3712000000 | 
+|Angola	        | Africa	      |1246700	| 20609294	| 100990000000 |
 ...
 
 
@@ -36,22 +36,24 @@ SELECT name, area FROM world
 
 ## II. [SELECT Quiz](https://sqlzoo.net/wiki/SELECT_Quiz)
 Some questions concerning basic SQL statements
-```
-name	      |continent	    | area	  | population	| gdp
-Afghanistan | South Asia    | 652225  |	26000000	  | 
-Albania	    | Europe	      | 28748	  | 3200000	    |  66560000000
-Algeria	    | Middle East	  | 2400000 |	32900000	  | 750120000000
-Andorra	    | Europe	      | 468	    | 64000	      | 
+
+|name	      |continent	    | area	  | population	| gdp|
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+|Afghanistan | South Asia    | 652225  |	26000000	  | |
+|Albania	    | Europe	      | 28748	  | 3200000	    |  66560000000|
+|Algeria	    | Middle East	  | 2400000 |	32900000	  | 750120000000|
+|Andorra	    | Europe	      | 468	    | 64000	      | |
 ...
-```
+
 
 1. Select the code which produces this table
-```
-name	      | population
-Bahrain	    |   1234571
-Swaziland   |   1220000
-Timor-Leste	|   1066409
-```
+
+|name	      | population|
+| ------------- | ------------- |
+|Bahrain	    |   1234571|
+|Swaziland   |   1220000|
+|Timor-Leste	|   1066409|
+
 
 Answer:
 ```
@@ -66,11 +68,10 @@ WHERE population BETWEEN 1000000 AND 1250000
 ```
 
 Answer:
-```
     Table-E
-Albania |  3200000
-Algeria | 32900000
-```
+| ------------- | ------------- |
+|Albania |  3200000|
+|Algeria | 32900000|
 
 3. Select the code which shows the countries that end in A or L
 Answer:
@@ -86,22 +87,23 @@ FROM world
 WHERE length(name)=5 and region='Europe'
 ```
 Answer:
-```
-name  | length(name)
-Italy |            5
-Malta |            5
-Spain |            5
-```
+
+|name  | length(name)|
+| ------------- | ------------- |
+|Italy |            5|
+|Malta |            5|
+|Spain |            5|
 
 5. Here are the first few rows of the world table:
-```
-name	      |continent	    | area	  | population	| gdp
-Afghanistan | South Asia    | 652225  |	26000000	  | 
-Albania	    | Europe	      | 28748	  | 3200000	    |  66560000000
-Algeria	    | Middle East	  | 2400000 |	32900000	  | 750120000000
-Andorra	    | Europe	      | 468	    | 64000	      | 
+
+|name	      |continent	    | area	  | population	| gdp|
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+|Afghanistan | South Asia    | 652225  |	26000000	  | |
+|Albania	    | Europe	      | 28748	  | 3200000	    |  66560000000 |
+|Algeria	    | Middle East	  | 2400000 |	32900000	  | 750120000000 | 
+|Andorra	    | Europe	      | 468	    | 64000	      |  |
 ...
-```
+
 Pick the result you would obtain from this code:
 ```
 SELECT name, area*2 FROM world WHERE population = 64000
