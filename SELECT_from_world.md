@@ -10,21 +10,6 @@
 
 In this tutorial you will use the SELECT command on the table world:
 
-Contents
-1	[Introduction](#introduction)
-2	[Large Countries](#large_contries)
-3	[Per capita GDP](#per_capita_gdp)
-4	[South America In millions](#south_america_in_millions)
-5	[France, Germany, Italy](#france_germany_italy)
-6	[United](#united)
-7	[Two ways to be big](#two_ways_to_be_big)
-8	[One or the other (but not both)](#one_or_the_other)
-9	[Rounding](#rounding)
-10	[Trillion dollar economies](#trillion_dollar_economies)
-11	[Name and capital have the same length](#name_and_capital)
-12	[Matching name and capital](#matching_name)
-13	[All the vowels](#all_the_vowels)
-
 ## 1. Introduction
 [Read the notes about this table](https://sqlzoo.net/wiki/Read_the_notes_about_this_table.)
 Observe the result of running this SQL command to show the name, continent and population of all countries.
