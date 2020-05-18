@@ -68,7 +68,7 @@ WHERE population BETWEEN 1000000 AND 1250000
 ```
 
 Answer:
-    Table-E
+|    Table-E |
 | ------------- | ------------- |
 |Albania |  3200000|
 |Algeria | 32900000|
